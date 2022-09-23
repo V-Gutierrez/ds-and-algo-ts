@@ -29,16 +29,16 @@ export default class Stack<T> {
     this.length = Math.max(0, this.length - 1)
 
     if (this.length === 0) {
-      const head = this.head
+      const currentHead = this.head
       this.head = undefined //
 
-      return head?.value
+      return currentHead?.value
     }
 
-    const head = this.head
-    this.head = head?.prev
+    const currentHead = this.head
+    this.head = currentHead?.prev
 
-    return head?.value
+    return currentHead?.value
   }
 
   peek(): T | undefined {
