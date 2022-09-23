@@ -1,4 +1,4 @@
-type StackNode<T> {
+interface StackNode<T> {
   value: T;
   prev?: StackNode<T>;
 }
@@ -12,6 +12,7 @@ export default class Stack<T> {
     this.head = undefined
     this.length = 0
   }
+
   push(item: T): void {
     const node = { value: item } as StackNode<T>
 
