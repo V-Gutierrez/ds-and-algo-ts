@@ -7,3 +7,5 @@ interface LinkedList<T> {
   prepend(item: T): void;
   get(index: number): T | undefined;
 }
+
+//TODO: implement
