@@ -29,10 +29,10 @@ export default class Stack<T> {
     this.length = Math.max(0, this.length - 1)
 
     if (this.length === 0) {
-      const currentHead = this.head
-      this.head = undefined //
+      const currentHeadCopy = this.head
+      this.head = undefined
 
-      return currentHead?.value
+      return currentHeadCopy?.value
     }
 
     const currentHead = this.head
