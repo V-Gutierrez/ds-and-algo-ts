@@ -7,3 +7,4 @@ const a8 = new Uint8Array(arr)
 
 console.log(arr)
 console.log(a8)
+
