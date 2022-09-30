@@ -152,3 +152,24 @@ class DoublyLinkedList<T> implements DoublyLinkedList<T> {
   }
 
 }
+
+const dbk = new DoublyLinkedList()
+
+console.log(dbk.length)
+
+dbk.append({ value: "U 2" })
+console.log(dbk.length)
+
+console.log(dbk.get(0))
+
+dbk.append({ value: "U 222" })
+console.log(dbk.length)
+console.log(dbk.get(1))
+console.log(dbk.get(2))
+
+
+dbk.insertAt({ value: "AAA" }, 2)
+
+console.log(dbk.length)
+console.log(dbk.get(1))
+console.log(dbk.get(2))
